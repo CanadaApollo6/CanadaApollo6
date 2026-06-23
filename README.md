@@ -45,4 +45,4 @@ I also led the AI & Machine Learning workshop at Kansas City Developer Conferenc
 - Email: riel.stamand@gmail.com
 - LinkedIn: [in/riel-st-amand](https://linkedin.com/in/riel-st-amand)
 - Site: [rielstamand.dev](https://rielstamand.dev)
-- X: ‹your handle›
+- X: [@RielStAmand](https://x.com/rielstamand)
