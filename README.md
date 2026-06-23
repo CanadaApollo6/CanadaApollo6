@@ -1,31 +1,48 @@
 # Riel St. Amand
 
-Machine Learning Engineer specializing in production ML systems and real-time inference.
+**Machine learning engineer working on reinforcement learning and post-training for language models.**
 
-## Highlight Project: COVID-19 Diagnostic System
+I work on teaching models to reason — and on the harder, less glamorous problem of proving they actually got better. My current focus is verifiable-reward RL (GRPO / RLVR), post-training on a single-GPU budget, and evaluation rigorous enough to tell a real gain from a lucky seed.
 
-Built an ensemble neural network system that achieved **100% diagnostic accuracy** 
-across **1M+ production COVID-19 tests** at Gravity Diagnostics.
+Based in Dayton, OH. Currently an Engineer III at Smart Data; previously built production ML in clinical diagnostics.
 
-- 🎯 Zero errors when validated against human lab technicians
-- ⚡ Reduced diagnosis time from 15 minutes → <1 second
-- 🏭 Processed 30,000+ daily tests in production
-- 🧠 Ensemble of 5 CNN-LSTM networks for robust predictions
+---
 
-[View Project →](https://github.com/CanadaApollo6/Galen-COVID19)
+## What I'm working on
 
-## Tech Stack
+**A GRPO pipeline that teaches a small language model to reason over structured data — on one GPU.**
+Verifiable rewards (a correctness check plus a format signal), TRL's `GRPOTrainer` with LoRA, and vLLM-accelerated rollouts. The part I care most about is the evaluation: accuracy broken out by task type, scored against a naive best-constant floor, with Wilson confidence intervals and a paired McNemar test — plus a written record of the failure modes I hit (KL drift, reward-gaming, the rollout bottleneck) and how I diagnosed each one.
 
-**ML/AI:** TensorFlow • TensorFlow.js • Scikit-Learn • Computer Vision • NLP
+[Code and write-up →](https://github.com/CanadaApollo6/gridiron-grpo)
 
-**Languages:** Python • TypeScript • JavaScript • C# • SQL
+## Research
 
-**Full-Stack:** React • Remix • FastAPI • Node.js • .NET Core
+Two papers in preparation / under submission:
 
-## Recent Work
+- **Evaluating reasoning models against deductive ground truth.** A setting where the correct answer is fixed by construction, so you can measure *how* a model fails — not just whether — and watch its recovery as you give it more to work with. *(in submission)*
+- **When does verifiable-reward RL actually help?** An empirical study of GRPO / RLVR on structured, tabular reasoning across model families: where the gains are real, where they're seed noise, and what predicts the difference. *(in preparation)*
 
-- 🤖 Building invoice automation with Azure AI (95% time reduction)
-- 🎤 ML Workshop leader at Kansas City Developer Conference 2022
-- 🔬 Production ML systems in healthcare and enterprise
+## Production ML (background)
 
-📫 Reach me: riel.stamand@gmail.com | [LinkedIn](https://linkedin.com/in/riel-st-amand)
+Before the research turn, I built and shipped ML in clinical diagnostics:
+
+- A production COVID-19 diagnostic system at Gravity Diagnostics — an ensemble of CNN-LSTM models that processed **1M+ tests** at roughly **30,000 per day**, validated to match human lab technicians, cutting turnaround from about 15 minutes to under a second.
+
+I also led the AI & Machine Learning workshop at Kansas City Developer Conference (KCDC) 2022, and I write and speak on agentic AI and small-model reasoning.
+
+---
+
+## Tools
+
+**RL / post-training:** PyTorch · TRL · vLLM · GRPO / RLVR · LoRA / PEFT · reward design · evaluation & failure-mode analysis
+
+**Also:** Python · TypeScript · C# · SQL · FastAPI · TensorFlow
+
+---
+
+## Reach me
+
+- Email: riel.stamand@gmail.com
+- LinkedIn: [in/riel-st-amand](https://linkedin.com/in/riel-st-amand)
+- Site: ‹your personal site›
+- X: ‹your handle›
