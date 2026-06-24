@@ -13,7 +13,7 @@ Based in Dayton, OH. Currently an Engineer III at Smart Data; previously built p
 **A GRPO pipeline that teaches a small language model to reason over structured data — on one GPU.**
 Verifiable rewards (a correctness check plus a format signal), TRL's `GRPOTrainer` with LoRA, and vLLM-accelerated rollouts. The part I care most about is the evaluation: accuracy broken out by task type, scored against a naive best-constant floor, with Wilson confidence intervals and a paired McNemar test — plus a written record of the failure modes I hit (KL drift, reward-gaming, the rollout bottleneck) and how I diagnosed each one.
 
-[Code and write-up →](https://github.com/CanadaApollo6/gridiron-grpo)
+[Code and write-up →](https://github.com/CanadaApollo6/tabular-reasoning-grpo)
 
 ## Research
 
