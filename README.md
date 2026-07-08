@@ -1,8 +1,8 @@
 # Riel St. Amand
 
-**Machine learning engineer working on reinforcement learning and post-training for language models.**
+**Senior full-stack engineer with production ML depth**
 
-I work on teaching models to reason — and on the harder, less glamorous problem of proving they actually got better. My current focus is verifiable-reward RL (GRPO / RLVR), post-training on a single-GPU budget, and evaluation rigorous enough to tell a real gain from a lucky seed.
+I’m a senior full-stack engineer with production ML depth. I build React, TypeScript, Python, and cloud systems, and I write about the places where model behavior needs to be measured instead of guessed.
 
 Based in Dayton, OH. Currently an Engineer III at Smart Data; previously built production ML in clinical diagnostics.
 
